@@ -1,0 +1,136 @@
+.community-page {
+  min-height: 75vh;
+  padding: 88px 24px;
+  background: #f8f6f0;
+  color: #102c49;
+}
+
+.community-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.community-eyebrow {
+  color: #aa8338;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.community-content h1 {
+  margin: 14px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1.05;
+}
+
+.community-intro {
+  max-width: 650px;
+  color: #536476;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.community-notice {
+  margin: 32px 0;
+  padding: 22px;
+  border: 1px solid #e3d7bd;
+  border-radius: 12px;
+  background: #fff;
+  line-height: 1.7;
+}
+
+.community-notice p,
+.community-option p {
+  color: #596a7b;
+  line-height: 1.7;
+}
+
+.community-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.community-option {
+  padding: 25px;
+  border: 1px solid #e7e3db;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgb(16 44 73 / 5%);
+}
+
+.community-option h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+}
+
+.community-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  margin-top: 12px;
+  padding: 12px 18px;
+  border: 1px solid #102c49;
+  border-radius: 6px;
+  background: #102c49;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.community-button:hover {
+  background: #1a4268;
+  transform: translateY(-2px);
+}
+
+.community-button-outline {
+  border-color: #b08a43;
+  background: #fff;
+  color: #102c49;
+}
+
+.community-button-outline:hover {
+  background: #f7f0e2;
+}
+
+.community-reminder,
+.community-setup-warning {
+  font-size: 0.9rem;
+}
+
+.community-reminder {
+  margin-top: 28px;
+  color: #667586;
+  line-height: 1.7;
+}
+
+.community-back {
+  display: inline-block;
+  margin-top: 18px;
+  color: #102c49;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.community-back:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .community-page {
+    padding: 56px 18px;
+  }
+
+  .community-options {
+    grid-template-columns: 1fr;
+  }
+
+  .community-button {
+    width: 100%;
+  }
+}
