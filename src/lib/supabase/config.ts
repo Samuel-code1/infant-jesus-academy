@@ -30,4 +30,5 @@ export function sanitizeSupabaseUrl(rawUrl: string | undefined): string {
       `Invalid Supabase URL: "${trimmedUrl}". Expected a project URL like https://<project>.supabase.co`
     );
   }
+  return normalizedUrl;
 }
